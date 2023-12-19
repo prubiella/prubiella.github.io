@@ -1,1 +1,1 @@
-gem install 'chulapa-jekyll'
+gem "chulapa-jekyll"
