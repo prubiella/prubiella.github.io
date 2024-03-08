@@ -16,3 +16,4 @@ social: true # includes social icons at the bottom of the page
 ---
 
 Keen on learning with new languages/services or hardware to keep myself up to date. I believe in sharing knowledge and learn from my workmates points of view to reach the best solution. I always learn something new.
+
