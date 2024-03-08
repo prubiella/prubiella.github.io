@@ -26,9 +26,9 @@
       "name": "ATRÁPALO",
       "position": "SENIOR BACKEND DEVELOPER",
       "url": "https://atrapalo.com",
-      "startDate": "2019-07-01",
-      "summary": "I work in the Urban Leisure team, managing activities and shows. Integrating third-party services via REST APIs to enrich and enhance the company's catalog. Symfony based microservices with a focus on DDD and hexagonal architecture. Project management and communication with external teams. Main Contributions: Conducting internal training sessions to improve team productivity and visibility of work. Worked on improving continuous integration, pipelines, and migrating Docker Swarm stack to Kubernetes. Maintaining legacy code to gradually migrate functionality to new microservices, enhancing scalability.",
-      "highlights": ["REST API", "microservices","DDD", "internal training sessions", "Docker Swarm", "Kubernetes"]
+      "startDate": "2019-07",
+      "summary": "I work in the Urban Leisure team, managing activities and shows.<br/> <ul><li>Integrating third-party services via <strong>REST API</strong>s to enrich and enhance the company's catalog. Symfony based <strong>microservices</strong> with a focus on <strong>DDD</strong> and hexagonal architecture.</li><li> Project management and communication with external teams.</li></ul> Main Contributions:<br/> <ul><li>Conducting <strong>internal training sessions</strong> to improve team productivity and visibility of work.</li><li> Worked on improving continuous integration, pipelines, and migrating <strong>Docker Swarm</strong> stack to <strong>Kubernetes</strong>.</li><li> Maintaining legacy code to gradually migrate functionality to new microservices, enhancing scalability.</li></ul>",
+      "highlights": []
     },
     {
       "name": "JOYNERS",
@@ -36,8 +36,8 @@
       "url": "https://joyners.com",
       "startDate": "2018-07-01",
       "endDate": "2019-06-01",
-      "summary": "I worked closely with the CTO to develop functionality at both the backend and frontend levels. Utilized Yii2 framework and implemented best practices like SOLID. Managed web server and configuration. Conducted backups on S3 Managed project entirely using Bitbucket",
-      "highlights": ["REST API", "Yii2", "SOLID", "Server administration and configuration"]
+      "summary": "I worked closely with the CTO to develop functionality at both the backend and frontend levels.<br/> <ul><li> Utilized <strong>Yii2</strong> framework and implemented best practices like <strong>SOLID</strong>.</li><li> Managed <strong>web server and configuration</strong>.</li><li> Conducted backups on S3 Managed project entirely using Bitbucket</li></ul>",
+      "highlights": []
     },
     {
       "name": "FREAKSHEEP",
@@ -45,8 +45,8 @@
       "url": "https://freaksheep.com",
       "startDate": "2014-12-01",
       "endDate": "2018-08-01",
-      "summary": "Entrepreneurial project dedicated to developing multi-platform applications and services. Proficient in creating and managing cloud infrastructures using AWS. Implementation of web hosting systems (ISPConfig3.1, EC2, RDS, VPC, Route53) and backup systems (S3). Integration with Google Workspace. Experienced in project management utilizing Bitbucket, Slack, and JIRA for efficient collaboration. Extensive experience in corporate and custom website development using WordPress and Prestashop. Competent in web application development using Symfony2 and AngularJS and in smartphone application development using Ionic1", 
-      "highlights": ["AWS", "web hosting systems", "Google Workspace", "website development", "Symfony2", "Ionic1"]
+      "summary": "Entrepreneurial project dedicated to developing multi-platform applications and services.<br/> <ul><li> Proficient in creating and managing <strong>cloud infrastructures</strong> using <strong>AWS</strong>.</li><li>Implementation of <strong>web hosting systems</strong> (ISPConfig3.1, EC2, RDS, VPC, Route53) and backup systems (S3).</li><li>Integration with <strong>Google Workspace</strong>.</li><li>Experienced in project management utilizing Bitbucket, Slack, and JIRA for efficient collaboration.</li><li>Extensive experience in corporate and custom <strong>website development</strong> using WordPress and Prestashop.</li><li>Competent in <strong>web application development</strong> using <strong>Symfony2</strong> and <strong>AngularJS</strong> and in smartphone application development using <strong>Ionic1</strong></li></ul>", 
+      "highlights": []
     }
   ],
   "education": [
