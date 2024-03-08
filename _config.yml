@@ -124,7 +124,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: my stuff # blog_name will be displayed in your blog page
-blog_description: here you can browse what I do 
+blog_description: here you can take a look to what I do 
 permalink: /blog/:year/:title/
 
 # Pagination
