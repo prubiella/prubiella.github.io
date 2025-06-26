@@ -26,8 +26,9 @@
       "name": "Docplanner",
       "position": "SENIOR BACKEND ENGINEER",
       "url": "https://www.docplanner.com",
-      "startDate": "2025-11",
-      "summary": "I worked in payments area of the company, focused in the integration of third-party services and internal microservices.<br/> <ul><li>Developing and maintaining <strong>REST APIs</strong> for payment processing.</li><li>Implementing <strong>DDD</strong> principles and hexagonal architecture in microservices.</li><li>Collaborating with cross-functional teams to ensure seamless integration of payment systems.</li></ul> Main Contributions:<br/> <ul><li>Improved Invoicing processing for ES and IT by optimizing existing microservices, improving resilience, scalability, stability and development cycle.</li><li>Conducted training sessions to enhance team understanding of current k8s infrastructure and CI/CD processes.</li></ul>",
+      "startDate": "2024-11",
+      "endDate": "Present",
+      "summary": "Senior Backend Engineer in payments team, leading distributed infrastructure improvements with <strong>PHP</strong>, <strong>.NET</strong>, <strong>AWS</strong>, and <strong>Kubernetes</strong>.<br/> <ul><li>Implemented <strong>Redis</strong> caching solutions and managed cloud deployments that enhanced system performance and scalability.</li><li>Developed features across multiple critical applications while conducting <strong>Kubernetes</strong> training and improving team processes.</li><li>Experienced in <strong>Docker</strong>, <strong>CI/CD</strong>, <strong>microservices</strong>, and <strong>REST APIs</strong>.</li></ul> Key Achievements:<br/> <ul><li>Led distributed cache implementation, optimized <strong>AWS</strong> infrastructure, resolved critical payment system incidents.</li><li>Enhanced team knowledge sharing through training sessions and improved documentation processes.</li></ul>",
       "highlights": []
     },
     {
