@@ -23,10 +23,19 @@
   },
   "work": [
     {
+      "name": "Docplanner",
+      "position": "SENIOR BACKEND ENGINEER",
+      "url": "https://www.docplanner.com",
+      "startDate": "2025-11",
+      "summary": "I worked in payments area of the company, focused in the integration of third-party services and internal microservices.<br/> <ul><li>Developing and maintaining <strong>REST APIs</strong> for payment processing.</li><li>Implementing <strong>DDD</strong> principles and hexagonal architecture in microservices.</li><li>Collaborating with cross-functional teams to ensure seamless integration of payment systems.</li></ul> Main Contributions:<br/> <ul><li>Improved Invoicing processing for ES and IT by optimizing existing microservices, improving resilience, scalability, stability and development cycle.</li><li>Conducted training sessions to enhance team understanding of current k8s infrastructure and CI/CD processes.</li></ul>",
+      "highlights": []
+    },
+    {
       "name": "ATRÁPALO",
       "position": "SENIOR BACKEND DEVELOPER",
       "url": "https://atrapalo.com",
       "startDate": "2019-07",
+      "endDate": "2025-10",
       "summary": "I work in the Urban Leisure team, managing activities and shows.<br/> <ul><li>Integrating third-party services via <strong>REST API</strong>s to enrich and enhance the company's catalog. Symfony based <strong>microservices</strong> with a focus on <strong>DDD</strong> and hexagonal architecture.</li><li> Project management and communication with external teams.</li></ul> Main Contributions:<br/> <ul><li>Conducting <strong>internal training sessions</strong> to improve team productivity and visibility of work.</li><li> Worked on improving continuous integration, pipelines, and migrating <strong>Docker Swarm</strong> stack to <strong>Kubernetes</strong>.</li><li> Maintaining legacy code to gradually migrate functionality to new microservices, enhancing scalability.</li></ul>",
       "highlights": []
     },
