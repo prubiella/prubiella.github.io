@@ -40,3 +40,9 @@
   --global-hover-color: #00369f;
   --global-code-bg-color: rgba(0, 54, 159, 0.05);
 }
+
+// Site override: tocbot.css gives .toc `overflow-y: auto`, and the sidebar list overflows its box by a few pixels,
+// so the CV page's short table of contents showed a scrollbar. The table of contents is short enough to never need one.
+#toc-sidebar {
+  overflow: visible;
+}
