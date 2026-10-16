@@ -1,0 +1,17 @@
+---
+version: 1
+overrides:
+  _includes/cv/experience.liquid:
+    owner: al_folio_cv
+    gem_version: 1.0.2
+    upstream_path: templates/cv/experience.liquid
+    upstream_sha256: 901c87d2e97fea8a679d811e83893267b10eec6ae65b34aee95d8948c5c56c2a
+    local_sha256: 9fce5004250beb5213dd58a1ca1460a62071d8c9cd58ea1386679388d312c97b
+    acknowledged_at: '2026-10-16'
+  assets/css/main.scss:
+    owner: al_folio_core
+    gem_version: 1.0.15
+    upstream_path: assets/css/main.scss
+    upstream_sha256: 437c6c911c596391413e435dc0ea7095e682e85c572c1fd3fff69f9597455b3e
+    local_sha256: a954f0b589191ba3fbf72b65c8bc4e9521aa3752ed158b8710b0ce328d077129
+    acknowledged_at: '2026-10-16'

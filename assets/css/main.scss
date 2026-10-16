@@ -3,18 +3,39 @@
 ---
 @charset "utf-8";
 
-// Dimensions
-$max-content-width: {{ site.max_width }};
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
 
-@import
-  "variables",
-  "themes",
-  "layout",
-  "base",
-  "distill",
-  "cv",
-  "font-awesome/fontawesome",
-  "font-awesome/brands",
-  "font-awesome/solid",
-  "font-awesome/regular"
-;
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+// Site override (local copy of al_folio_core's assets/css/main.scss): dark blue instead of purple
+// as the light-theme accent, as in the v0.x site. html[data-theme="dark"] is more specific, so dark mode is unchanged.
+:root {
+  --global-theme-color: #00369f;
+  --global-hover-color: #00369f;
+  --global-code-bg-color: rgba(0, 54, 159, 0.05);
+}
