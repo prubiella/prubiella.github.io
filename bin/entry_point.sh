@@ -34,7 +34,9 @@ start_jekyll() {
     manage_gemfile_lock
     ensure_bundle_deps
     mkdir -p "$DOCKER_DESTINATION"
-    bundle exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling --destination "$DOCKER_DESTINATION" --config "$CONFIG_FILE" &
+    # No --livereload: on a page opened over https (Traefik), livereload.js connects to port 35729 with TLS,
+    # the LiveReload server cannot parse it and its crash takes `jekyll serve` down (502 Bad Gateway).
+    bundle exec jekyll serve --watch --port=8080 --host=0.0.0.0 --verbose --trace --force_polling --destination "$DOCKER_DESTINATION" --config "$CONFIG_FILE" &
 }
 
 start_jekyll
