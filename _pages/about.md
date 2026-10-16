@@ -24,4 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Keen on learning with new languages/services or hardware to keep myself up to date. I believe in sharing knowledge and learn from my workmates points of view to reach the best solution. I always learn something new.
+Senior Backend Engineer with 10+ years in PHP and Symfony, the last two in payments. I own features end to end across PHP, .NET, Kubernetes and AWS, lead incident recovery and build alerting that catches issues before customers do. Early adopter of AI tools and spec-driven development. I share what I learn and learn from my team.
+
+Outside work I run a self-hosted K3s cluster, build my own Claude Code plugin and tinker with IoT, home automation and 3D printing.
