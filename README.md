@@ -22,7 +22,7 @@ Requires Docker and the shared Traefik from `freaksheep-dev/localstack` (network
 make setup-hostname   # once: adds prubiella.traefik.local to /etc/hosts
 make build            # builds the image as your user
 make start            # http://prubiella.traefik.local and http://127.0.0.1:8082
-make logs             # follow Jekyll; pages rebuild on save, _config.yml changes restart Jekyll
+make logs             # follow Jekyll; pages rebuild on save (refresh the browser), _config.yml changes restart Jekyll
 make stop
 ```
 
