@@ -228,6 +228,7 @@ exclude:
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml
+  - docker-compose.override.yml
   - docs/
   - Gemfile
   - Gemfile.lock
