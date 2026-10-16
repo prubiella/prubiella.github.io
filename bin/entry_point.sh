@@ -39,9 +39,11 @@ start_jekyll() {
 
 start_jekyll
 
+# Watch the directory, not the file: editors and `sed -i` replace _config.yml with a new file, which ends a
+# watch on the file itself, and under `set -e` the failing inotifywait used to stop the container.
 while true; do
-    inotifywait -q -e modify,move,create,delete $CONFIG_FILE
-    if [ $? -eq 0 ]; then
+    changed=$(inotifywait -q -e close_write,moved_to,create --format '%f' . || true)
+    if [ "$changed" = "$CONFIG_FILE" ]; then
         echo "Change detected to $CONFIG_FILE, restarting Jekyll"
         # match "jekyll serve" only: a bare "jekyll" also matches this script (/srv/jekyll/bin/entry_point.sh)
         # and killed the container on every config change
