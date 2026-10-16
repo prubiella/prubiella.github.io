@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Pau Rubiella Galindo",
-    "label": "Backend Developer",
+    "label": "Senior Backend Engineer",
     "image": "",
     "email": "me@paurubiella.com",
     "url": "https://paurubiella.com/",
@@ -20,7 +20,7 @@
       "url": "https://www.docplanner.com",
       "startDate": "2024-11",
       "endDate": "Present",
-      "summary": "Senior Backend Engineer in payments team, leading distributed infrastructure improvements with <strong>PHP</strong>, <strong>.NET</strong>, <strong>AWS</strong>, and <strong>Kubernetes</strong>.<br/> <ul><li>Implemented <strong>Redis</strong> caching solutions and managed cloud deployments that enhanced system performance and scalability.</li><li>Developed features across multiple critical applications while conducting <strong>Kubernetes</strong> training and improving team processes.</li><li>Experienced in <strong>Docker</strong>, <strong>CI/CD</strong>, <strong>microservices</strong>, and <strong>REST APIs</strong>.</li></ul> Key Achievements:<br/> <ul><li>Led distributed cache implementation, optimized <strong>AWS</strong> infrastructure, resolved critical payment system incidents.</li><li>Enhanced team knowledge sharing through training sessions and improved documentation processes.</li></ul>",
+      "summary": "Payments team (full remote): led infrastructure work with <strong>.NET</strong>, <strong>AWS</strong> and <strong>Kubernetes</strong>. Built PHP features with <strong>DDD</strong>, <strong>CQRS</strong> and <strong>AI-assisted development</strong>.<br/> <ul><li>Led <strong>a new payment feature for two markets</strong> with a new payment provider, from design to production.</li><li>AI-assisted engineering with <strong>Claude Code</strong> and <strong>Cursor</strong>: built 8 skills and tools used by the whole team (payment-provider sandbox, read-only production database access, message-template checkers) and improved 27 shared skills. Learned .NET with AI support.</li><li>Built an AI skill to manage test environments and adapted it to a new testing platform. Ran <strong>AI training sessions</strong> and a cross-team demo.</li><li>Built payment alerting as code with <strong>Datadog</strong>, <strong>OpenTelemetry</strong> and runbooks that caught a silent onboarding outage. Led an incident recovery that got back 82% of the affected value.</li><li>Delivered key parts of Spain's e-invoicing compliance (<strong>VeriFactu</strong>) under a legal deadline, and closed authorization gaps in fiscal invoicing.</li><li>Stabilized the invoicing service and cut its cost on my own initiative: Redis to <strong>DragonflyDB</strong>, horizontal scaling, unused databases removed.</li><li>Team multiplier: set up <strong>cloud dev environments</strong> for several backend and frontend apps, adopted company-wide. Mentored four engineers.</li></ul>",
       "highlights": []
     },
     {
@@ -82,12 +82,16 @@
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Docker, Kubernetes, AWS",
-        "Microservices, DDD, SOLID",
-        "Gitlab, Github, CI, CD",
-        "API REST, 3rd party integrations",
-        "PHP, Symfony, Yii",
-        "MySQL, Mongo, Redis, RabbitMQ"
+        "PHP, Symfony, .NET (C#)",
+        "AWS, Kubernetes, ArgoCD",
+        "Terraform, Docker, CI/CD",
+        "Microservices, REST APIs",
+        "DDD, CQRS, TDD, SOLID",
+        "Payment providers",
+        "MySQL, SQL Server, Redis",
+        "MongoDB, RabbitMQ",
+        "Datadog, OpenTelemetry",
+        "Claude Code, Cursor, SDD, agents"
       ]
     },
     {
@@ -95,15 +99,11 @@
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Communication & Collaboration",
-        "Problem-solving",
-        "Empathy",
-        "Adaptability",
-        "Time management",
-        "Attention to detail",
-        "Creativity",
-        "Critical thinking",
-        "Continuous learning"
+        "Ownership end to end",
+        "Problem-solving under pressure",
+        "Adaptability and fast learning",
+        "Mentoring and knowledge sharing",
+        "Clear communication with business"
       ]
     }
   ],
@@ -120,7 +120,7 @@
     },
     {
       "language": "English",
-      "fluency": "Fluent",
+      "fluency": "B2",
       "icon": ""
     }
   ]
