@@ -232,6 +232,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
+  - Makefile
   - lighthouse_results/
   - package.json
   - package-lock.json

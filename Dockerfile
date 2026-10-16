@@ -1,11 +1,11 @@
 FROM ruby:slim
 
-# uncomment these if you are having this issue with the build:
-# /usr/local/bundle/gems/jekyll-4.3.4/lib/jekyll/site.rb:509:in `initialize': Permission denied @ rb_sysopen - /srv/jekyll/.jekyll-cache/.gitignore (Errno::EACCES)
-# ARG GROUPID=901
-# ARG GROUPNAME=ruby
-# ARG USERID=901
-# ARG USERNAME=jekyll
+# Non-root user matching the host user (docker-compose.yml passes the host ids), so the files
+# Jekyll writes into the bind-mounted repo are not owned by root
+ARG GROUPID=1000
+ARG GROUPNAME=jekyll
+ARG USERID=1000
+ARG USERNAME=jekyll
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -13,11 +13,8 @@ LABEL authors="Amir Pourmand,George Araújo" \
       description="Docker image for al-folio academic template" \
       maintainer="Amir Pourmand"
 
-# uncomment these if you are having this issue with the build:
-# /usr/local/bundle/gems/jekyll-4.3.4/lib/jekyll/site.rb:509:in `initialize': Permission denied @ rb_sysopen - /srv/jekyll/.jekyll-cache/.gitignore (Errno::EACCES)
-# add a non-root user to the image with a specific group and user id to avoid permission issues
-# RUN groupadd -r $GROUPNAME -g $GROUPID && \
-#     useradd -u $USERID -m -g $GROUPNAME $USERNAME
+RUN groupadd -r $GROUPNAME -g $GROUPID && \
+    useradd -u $USERID -m -g $GROUPNAME $USERNAME
 
 # install system dependencies
 RUN apt-get update -y && \
@@ -68,9 +65,8 @@ EXPOSE 8080
 
 COPY bin/entry_point.sh /tmp/entry_point.sh
 
-# uncomment this if you are having this issue with the build:
-# /usr/local/bundle/gems/jekyll-4.3.4/lib/jekyll/site.rb:509:in `initialize': Permission denied @ rb_sysopen - /srv/jekyll/.jekyll-cache/.gitignore (Errno::EACCES)
-# set the ownership of the jekyll site directory to the non-root user
-# USER $USERNAME
+# the user also owns the gems, because bin/entry_point.sh runs `bundle install` when the Gemfile changes
+RUN chown -R $USERNAME:$GROUPNAME /srv/jekyll /usr/local/bundle
+USER $USERNAME
 
 CMD ["/tmp/entry_point.sh"]

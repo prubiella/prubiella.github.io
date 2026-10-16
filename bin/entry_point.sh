@@ -43,8 +43,9 @@ while true; do
     inotifywait -q -e modify,move,create,delete $CONFIG_FILE
     if [ $? -eq 0 ]; then
         echo "Change detected to $CONFIG_FILE, restarting Jekyll"
-        jekyll_pid=$(pgrep -f jekyll)
-        kill -KILL $jekyll_pid
+        # match "jekyll serve" only: a bare "jekyll" also matches this script (/srv/jekyll/bin/entry_point.sh)
+        # and killed the container on every config change
+        pkill -KILL -f "jekyll serve" || true
         start_jekyll
     fi
 done
