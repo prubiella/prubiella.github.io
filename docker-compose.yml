@@ -1,11 +1,36 @@
-version: "3"
-# this file uses prebuilt image in dockerhub
+# Local development server. Built from the Dockerfile in this repo (run `make build`), served through the
+# shared Traefik at http://prubiella.traefik.local and directly at http://127.0.0.1:8082.
 services:
   jekyll:
-    image: amirpourmand/al-folio:latest
-    build: .
+    build:
+      context: .
+      # Run as the host user so the bind-mounted files (.jekyll-cache, Gemfile.lock) are not created as root.
+      # `make build` passes the host ids; the defaults fit the usual first user.
+      args:
+        GROUPID: ${LOCAL_GID:-1000}
+        GROUPNAME: jekyll
+        USERID: ${LOCAL_UID:-1000}
+        USERNAME: jekyll
+    command: /srv/jekyll/bin/entry_point.sh
     ports:
       - 8082:8080
       - 35729:35729
     volumes:
       - .:/srv/jekyll
+    environment:
+      - JEKYLL_ENV=development
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.portfolio.rule=Host(`${PORTFOLIO_HOSTNAME:-prubiella.traefik.local}`)"
+      - "traefik.http.routers.portfolio.entrypoints=http,https"
+      - "traefik.http.routers.portfolio.tls.domains[0].main=${PORTFOLIO_HOSTNAME:-prubiella.traefik.local}"
+      - "traefik.http.services.portfolio.loadbalancer.server.port=8080"
+      - "traefik.http.services.portfolio.loadbalancer.server.scheme=http"
+      - "traefik.docker.network=traefik_lb_network"
+    networks:
+      - default
+      - traefik_lb_network
+
+networks:
+  traefik_lb_network:
+    external: true
